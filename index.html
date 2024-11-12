@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <canvas id="bg"></canvas>
@@ -25,21 +26,38 @@
             <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
+        <div class="nav-contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:Bhujelsamir12@gmail.com">Bhujelsamir12@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:4132094023">(413) 209-4023</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Westfield, MA</span>
+            </div>
+        </div>
         <div class="social-links">
             <a href="https://github.com/samirbhujel" target="_blank"><i class="fab fa-github"></i></a>
-            <!-- Add your LinkedIn and Twitter when you have them -->
         </div>
     </nav>
 
     <main class="main-content">
         <section id="home" class="section">
             <div class="glass-card">
-                <h1>Hello, I'm <span class="highlight">Samir Bhujel</span></h1>
-                <h2>Computer Science Student</h2>
-                <p class="tagline">Westfield State University</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+                <div class="intro-content">
+                    <h1>Hello, I'm <span class="highlight">Samir Bhujel</span></h1>
+                    <div class="typing-container">
+                        <h2 class="typing-text"></h2>
+                    </div>
+                    <p class="tagline">Westfield State University</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary">View Projects</a>
+                        <a href="#contact" class="btn secondary">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -118,6 +136,112 @@
             </div>
         </section>
 
+        <!-- Add this section before the contact section -->
+        <section id="resume" class="section">
+            <div class="glass-card cv-container">
+                <h2>Curriculum Vitae</h2>
+                
+                <!-- Education -->
+                <div class="cv-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="cv-item">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <p class="cv-subtitle">Westfield State University | 2023 - Spring 2025</p>
+                        <ul class="cv-list">
+                            <li>Dean's List - Fall 2023</li>
+                            <li>Current GPA: 3.7</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coursework -->
+                <div class="cv-section">
+                    <h3><i class="fas fa-book"></i> Relevant Coursework</h3>
+                    <div class="cv-item">
+                        <h4>Computer Science Core</h4>
+                        <ul class="cv-list">
+                            <li>Introduction to Programming</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Data Structures</li>
+                            <li>Computer Architecture</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="cv-section">
+                    <h3><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+                    <div class="cv-item">
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">Haskell</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4>Web Development</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">Three.js</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4>Development Tools</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">GitHub</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Android Studio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Projects -->
+                <div class="cv-section">
+                    <h3><i class="fas fa-project-diagram"></i> Academic Projects</h3>
+                    <div class="cv-item">
+                        <div class="project-entry">
+                            <h4>Brick Breaker Game</h4>
+                            <p class="cv-subtitle">Android Mobile Game | Java</p>
+                            <ul class="cv-list">
+                                <li>Developed a classic arcade game using Java and Android Studio</li>
+                                <li>Implemented game physics and collision detection algorithms</li>
+                                <li>Created responsive UI design for various screen sizes</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-entry">
+                            <h4>Weather Application</h4>
+                            <p class="cv-subtitle">Web Application | JavaScript</p>
+                            <ul class="cv-list">
+                                <li>Built a weather tracking application using JavaScript</li>
+                                <li>Integrated OpenWeather API for real-time weather data</li>
+                                <li>Implemented responsive design using HTML5 and CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="cv-download">
+                    <a href="./docs/cv.pdf" class="btn primary" download>
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <section id="contact" class="section">
             <div class="glass-card">
                 <h2>Get In Touch</h2>
@@ -143,5 +267,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
     <script src="js/three-config.js"></script>
     <script src="js/main.js"></script>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html> 
