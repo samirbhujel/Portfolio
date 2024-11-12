@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samir Bhujel - Westfield State University</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    
+    <button class="theme-toggle" aria-label="Toggle theme">
+        🌙
+    </button>
+
+    <nav class="side-nav">
+        <div class="nav-logo">Samir Bhujel</div>
+        <ul class="nav-links">
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://github.com/samirbhujel" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- Add your LinkedIn and Twitter when you have them -->
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section id="home" class="section">
+            <div class="glass-card">
+                <h1>Hello, I'm <span class="highlight">Samir Bhujel</span></h1>
+                <h2>Computer Science Student</h2>
+                <p class="tagline">Westfield State University</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="glass-card about-container">
+                <div class="about-content">
+                    <div class="profile-image-container">
+                        <img src="images/my-avatar.png" alt="Samir Bhujel" class="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I am a student at Westfield State University, passionate about technology and its applications in solving real-world problems. Currently pursuing Computer Science with a focus on software development and creative solutions.</p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Haskell</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Information Security</span>
+                            <span class="skill-tag"><i class="fab fa-adobe"></i> Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="glass-card">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-video">
+                            <iframe
+                                src="https://drive.google.com/file/d/1SBImzkK-mUAkZRgBbLfab--8HkgJQqJQ/preview"
+                                allow="autoplay"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="project-content">
+                            <h3>Brick Breaker Game</h3>
+                            <p>A classic Brick Breaker game developed for Android using Java and Android Studio. Features smooth touch controls, dynamic ball physics, and progressive difficulty levels. Players control a paddle to bounce the ball and break bricks, aiming for high scores.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">Game Development</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Weather App</h3>
+                            <p>A web application that checks New York's weather conditions in real-time.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/samirbhujel/weather-app" class="btn small secondary">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Random Bible Verse</h3>
+                            <p>An application that generates random Bible verses for daily inspiration.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/samirbhujel/RandomBibleVerse" class="btn small secondary">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="glass-card">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.159.0/three.min.js"></script>
+    <script src="js/three-config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
